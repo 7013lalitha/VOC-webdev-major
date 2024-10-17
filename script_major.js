@@ -1299,22 +1299,3 @@
 			}
 	);
 }());
-function doPost(e) {
-    var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1"); // Replace 'Sheet1' with your sheet name
-    var data = e.parameter;
-  
-    // Append form data to the sheet
-    sheet.appendRow([data.name, data.email, data.message]); // Adjust fields as needed
-  
-    // Send an email notification
-    var emailAddress = "your-email@example.com"; // Replace with your email address or the recipient's email address
-    var subject = "New Form Submission";
-    var message = "You have a new form submission:\n\n" +
-                  "Name: " + data.name + "\n" +
-                  "Email: " + data.email + "\n" +
-                  "Message: " + data.message;
-  
-    MailApp.sendEmail(emailAddress, subject, message);
-  
-    return ContentService.createTextOutput("Form submission received.");
-}
