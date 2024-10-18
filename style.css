@@ -12,6 +12,30 @@
 	color: #ffffff;
 }
 
+.layout-bordered-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.layout-bordered-1-item {
+  padding: 15px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .layout-bordered-1-item {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 575px) {
+  .layout-bordered-1-item {
+    flex: 0 0 100%;
+  }
+}
+
+
 .blue-box {
     background-color: #007BFF; /* Blue background */
     padding: 20px;
