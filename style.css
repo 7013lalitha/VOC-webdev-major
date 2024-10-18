@@ -12,6 +12,16 @@
 	color: #ffffff;
 }
 
+.blue-box {
+    background-color: #007BFF; /* Blue background */
+    padding: 20px;
+    border-radius: 8px;
+    color: white; /* White text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 600px; /* Optional, limits width */
+    margin: 20px auto; /* Centering and spacing */
+}
+
 #about-us {
     background-color: #007BFF; /* Blue background */
     padding: 20px;
